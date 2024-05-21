@@ -6,17 +6,17 @@ import { NavLink } from 'react-router-dom';
 
 export function Login() {
   return (
-    <main className="flex flex-col-reverse justify-center max-w-7xl mx-auto gap-10 items-center bg-base-bg mt-10 sm:flex-row lg:justify-between ">
+    <main className="flex flex-col-reverse justify-center max-w-7xl mx-auto gap-10 items-center mt-10 sm:flex-row lg:justify-between ">
       <section>
         <img
           className="w-72 md:w-80 lg:w-full"
           src={watchingFilm}
-          alt="Casal assistindo filme com pipoca na mão"
+          alt="Garota com gato no pescoço mexendo no notebook"
         />
       </section>
 
       <section className="w-full sm:w-auto">
-        <form className="flex flex-col items-center gap-4 p-5 mx-2 rounded-lg bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 h-full">
+        <form className="flex flex-col items-center gap-4 p-5 w-full rounded-lg bg-gradient-to-r from-green-700 via-green-600 to-green-900">
           <h1 className="text-2xl">Login</h1>
 
           <div className="flex flex-col w-full">
@@ -52,9 +52,9 @@ export function Login() {
           />
           <div>
             <h4>
-              Ainda não tem uma conta? Faça um{' '}
-              <NavLink to="/register" className="text-green-500 cursor-pointer">
-                CADASTRO
+              Ainda não tem uma conta?{' '}
+              <NavLink to="/register" className="text-slate-950 cursor-pointer">
+                FAÇA UM CADASTRO
               </NavLink>
             </h4>
           </div>
