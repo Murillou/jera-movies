@@ -2,13 +2,14 @@ import { FacebookLogo } from 'phosphor-react';
 import watchingFilm from '../../assets/girl-watching.webp';
 import { Input } from '../Common/Input';
 import { Label } from '../Common/Label';
+import { NavLink } from 'react-router-dom';
 
 export function Login() {
   return (
-    <main className="flex flex-col-reverse justify-center gap-10 items-center bg-base-bg mt-10 sm:flex-row ">
+    <main className="flex flex-col-reverse justify-center max-w-7xl mx-auto gap-10 items-center bg-base-bg mt-10 sm:flex-row lg:justify-between ">
       <section>
         <img
-          className="w-72"
+          className="w-72 md:w-80 lg:w-full"
           src={watchingFilm}
           alt="Casal assistindo filme com pipoca na mão"
         />
@@ -38,11 +39,9 @@ export function Login() {
             />
           </div>
 
-          <input
-            className="bg-purple-600 p-3 w-full rounded-lg"
-            type="submit"
-            value="Login"
-          />
+          <button className="bg-purple-600 p-3 w-full rounded-lg cursor-pointer">
+            Login
+          </button>
 
           <p>ou entre com Facebook</p>
 
@@ -54,7 +53,9 @@ export function Login() {
           <div>
             <h4>
               Ainda não tem uma conta? Faça um{' '}
-              <span className="text-green-500">CADASTRO</span>
+              <NavLink to="/register" className="text-green-500 cursor-pointer">
+                CADASTRO
+              </NavLink>
             </h4>
           </div>
         </form>

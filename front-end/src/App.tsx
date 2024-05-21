@@ -1,11 +1,12 @@
-import { Header } from './components/Header/Header';
-import { Login } from './components/Login/Login';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './Router';
 
 export function App() {
   return (
     <>
-      <Header />
-      <Login />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </>
   );
 }

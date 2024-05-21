@@ -1,8 +1,8 @@
 interface InputProps {
   type: string;
-  name: string;
-  id: string;
-  placeholder: string;
+  name?: string;
+  id?: string;
+  placeholder?: string;
 }
 
 export function Input({ type, name, id, placeholder }: InputProps) {
