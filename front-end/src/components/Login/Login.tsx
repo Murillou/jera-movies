@@ -1,5 +1,7 @@
 import { FacebookLogo } from 'phosphor-react';
 import watchingFilm from '../../assets/girl-watching.webp';
+import { Input } from '../Common/Input';
+import { Label } from '../Common/Label';
 
 export function Login() {
   return (
@@ -17,13 +19,23 @@ export function Login() {
           <h1 className="text-2xl">Login</h1>
 
           <div className="flex flex-col w-full">
-            <label htmlFor="username">Usuário</label>
-            <input type="text" name="username" id="username" />
+            <Label htmlFor="username" content="Usuário" />
+            <Input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Digite seu usuário"
+            />
           </div>
 
           <div className="flex flex-col w-full">
-            <label htmlFor="password">Senha</label>
-            <input type="password" name="password" id="password" />
+            <Label htmlFor="password" content="Senha" />
+            <Input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Digite sua senha"
+            />
           </div>
 
           <input
